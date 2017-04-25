@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Flexbox Sandbox - Example Layout</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Yenly</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Kodo No Boken</a></li>
+          <li><a href="">Inspirations</a></li>
+        </ul>
+
+        <ul class="social">
+          <li><a href="" class="fb">Facebook</a></li>
+          <li><a href="" class="tw">Twitter</a></li>
+        </ul>
+      </nav>
+
+      <div style="margin: 20px">
+        <span>Layout: </span>
+        <a href="#" class="stack">Stack</a>
+        <a href="#" class="grid">Grid</a>
+      </div>
+
+      <section id="blocks">
+        <article>
+          <h2>Tacos tilde fixie vice organic</h2>
+          <p>Cray tousled 3 wolf moon polaroid, kogi stumptown fam keffiyeh ramps four loko banh mi cronut offal tumeric. Pitchfork sartorial air plant poke, blog ramps tousled heirloom plaid artisan brooklyn stumptown.  </p>
+        </article>
+        <article>
+          <h2>Pour-over whatever biodiesel stumptown</h2>
+          <p> Pitchfork sartorial air plant poke, blog ramps tousled heirloom plaid artisan brooklyn stumptown.  Pitchfork sartorial air plant poke, blog ramps tousled heirloom plaid artisan brooklyn stumptown. </p>
+        </article>
+        <article>
+          <h2> Vegan VHS franzen</h2>
+          <p>Vegan messenger bag celiac pork belly williamsburg four dollar toast. Pitchfork sartorial air plant poke, blog ramps tousled heirloom plaid artisan brooklyn stumptown. </p>
+        </article>
+        <article>
+          <h2>Authentic edison</h2>
+          <p>Pour-over raw denim actually banh mi, mustache DIY mixtape wolf ethical. Trust fund brooklyn flannel, stumptown man bun pinterest selfies brunch.</p>
+        </article>
+        <article>
+          <h2>Next level XOXO</h2>
+          <p>Meh photo booth pug occupy. Freegan live-edge franzen, tousled plaid thundercats artisan kale chips kogi venmo poutine flannel four loko. Vegan messenger bag celiac pork belly williamsburg four dollar toast. </p>
+        </article>
+        <article>
+          <h2>Authentic edison</h2>
+          <p>Affogato poutine glossier, chicharrones kinfolk scenester pitchfork try-hard single-origin coffee listicle VHS helvetica tattooed etsy chartreuse. Authentic organic cray disrupt humblebrag tattooed. Vegan messenger bag celiac pork belly williamsburg four dollar toast. </p>
+        </article>
+      </section>
+
+    </div>
+    <script>
+      $("a.stack").on("click", function() {
+        $("article").addClass("stack");
+      });
+      $("a.grid").on("click", function() {
+        $("article").removeClass("stack");
+      });
+    </script>
+  </body>
+</html>

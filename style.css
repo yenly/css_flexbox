@@ -1,0 +1,145 @@
+*{
+  font-family: verdana;
+  margin: 0;
+}
+
+body{
+  background: #eee;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background: white;
+}
+
+.box {
+  height: 100px;
+  min-width: 100px;
+  /* grow at same rate of 1, relative to elements next to it.
+  flex-grow: 1;*/
+}
+
+.one {
+  background: red;
+  flex-grow: 2;
+}
+
+.two {
+  background: blue;
+  flex-grow: 3;
+}
+
+.three {
+  background: green;
+  flex-grow: 1;
+}
+
+.row2 .box {
+  width: 320px;
+}
+/* the bigger the shrink rate, the more it shrinks */
+.four {
+  background: yellow;
+  flex-shrink: 1;
+}
+
+.five {
+  background: purple;
+  flex-shrink: 2;
+}
+
+.six {
+  background: orange;
+  flex-shrink: 5;
+}
+
+.row3 {
+  flex-wrap: wrap;
+}
+
+.row3 .box {
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.seven {
+  background: pink;
+}
+
+.eight {
+  background: lightblue;
+}
+
+.nine {
+  background: salmon;
+}
+
+/* flex-basis is like min-width */
+/* min-width will make browser scroll */
+/* flex-basis lets you go smaller than specified width - no scroll bar*/
+.row4 .box {
+  /*flex-basis: 200px;*/
+  /* shortcut way - flex: grow shrink basis */
+  flex: 1 0 200px;
+}
+
+.ten {
+  background: lavender;
+}
+
+.eleven {
+  background: steelblue;
+}
+
+.twelve {
+  background: olive;
+}
+
+.row5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column-reverse;
+  /* justify content applies only to main axis*/
+  justify-content: center;
+  height: 800px;
+  border: 1px solid black;
+}
+
+.row5 .box {
+  /*flex-basis: 200px;*/
+  /* shortcut way - flex: grow shrink basis */
+  flex: 0 0 100px;
+}
+
+.thirteen {
+  background: magenta;
+}
+
+.fourteen {
+  background: navy;
+}
+
+.fifteen {
+  background: teal;
+}
+
+.row6 {
+  flex-wrap: wrap;
+  flex-flow: row;
+  height: 600px;
+  /* justify-content: applies to main axis */
+  justify-content: center;
+  /* align-items: applies to cross axis */
+  align-items: center;
+  border: 1px solid black;
+}
+
+.row6 .box {
+  flex: 0 0 100px
+}
